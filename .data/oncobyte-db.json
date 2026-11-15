@@ -1,0 +1,1267 @@
+{
+  "users": [
+    {
+      "id": "usr_elena_vance",
+      "email": "elena.vance@oncobyte.org",
+      "name": "Elena Vance",
+      "passwordHash": "8b593d0187f93f2567b696b615ad81f1:f2093ce72241da81d615dd64e140d4c766fc7a05ef480ecba2df1725a0b1c4688f26ae7f11dffb9c0fe1608a72227ff1773b4d951750c75bb3b0d887c7dcc10c",
+      "role": "patient",
+      "createdAt": "2026-10-16T08:00:00.000Z",
+      "profile": {
+        "dietaryRestrictions": [
+          "Soft Texture",
+          "Low-Acid"
+        ],
+        "allergies": [
+          "Peanuts"
+        ],
+        "treatmentPhase": "Cycle 3 — Outpatient Chemotherapy",
+        "dailyFluidGoalMl": 1800,
+        "preferredTemp": "room",
+        "loggingPreferences": {
+          "meals": true,
+          "hydration": true,
+          "symptoms": true,
+          "appetite": true,
+          "tolerances": true
+        },
+        "reminders": {
+          "mealRemindersEnabled": true,
+          "mealTimes": [
+            "08:30",
+            "12:30",
+            "18:00"
+          ],
+          "hydrationRemindersEnabled": true,
+          "hydrationIntervalMinutes": 120
+        },
+        "clinicianName": "Dr. Priya Nair, MD (Medical Oncology)",
+        "dietitianName": "Marcus Chen, MS, RDN, CSO"
+      }
+    }
+  ],
+  "meals": [
+    {
+      "id": "meal_1",
+      "userId": "usr_elena_vance",
+      "mealType": "breakfast",
+      "foodName": "Creamy Oat & Poached Pear Porridge",
+      "ingredients": [
+        "rolled oats",
+        "almond milk",
+        "poached pear",
+        "almond butter"
+      ],
+      "normalizedIngredients": [
+        "oats",
+        "almond milk",
+        "pear",
+        "almond butter"
+      ],
+      "portion": "1 small bowl (220g)",
+      "timestamp": "2026-11-09T08:45:00.000Z",
+      "toleranceRating": 5,
+      "toleranceNotes": "Warm temperature and smooth texture felt very soothing.",
+      "isCustomFood": false,
+      "nutritionSummary": {
+        "proteinG": 9.5,
+        "fiberG": 7.2,
+        "energyKcal": 340,
+        "source": "USDA FDC"
+      },
+      "createdAt": "2026-11-09T08:50:00.000Z",
+      "updatedAt": "2026-11-09T08:50:00.000Z"
+    },
+    {
+      "id": "meal_2",
+      "userId": "usr_elena_vance",
+      "mealType": "lunch",
+      "foodName": "Warm Ginger Miso & Silken Tofu Broth",
+      "ingredients": [
+        "vegetable broth",
+        "fresh ginger",
+        "white miso paste",
+        "silken tofu",
+        "white rice"
+      ],
+      "normalizedIngredients": [
+        "vegetable broth",
+        "ginger",
+        "miso",
+        "tofu",
+        "white rice"
+      ],
+      "portion": "1.5 cups",
+      "timestamp": "2026-11-10T12:30:00.000Z",
+      "toleranceRating": 5,
+      "toleranceNotes": "Ginger settled mild morning queasiness cleanly.",
+      "isCustomFood": false,
+      "nutritionSummary": {
+        "proteinG": 11,
+        "fiberG": 2.5,
+        "energyKcal": 215,
+        "source": "USDA FDC"
+      },
+      "createdAt": "2026-11-10T12:40:00.000Z",
+      "updatedAt": "2026-11-10T12:40:00.000Z"
+    },
+    {
+      "id": "meal_3",
+      "userId": "usr_elena_vance",
+      "mealType": "dinner",
+      "foodName": "Tomato Basil Soup with Grilled Cheese",
+      "ingredients": [
+        "tomato soup",
+        "cheddar cheese",
+        "sourdough bread"
+      ],
+      "normalizedIngredients": [
+        "tomato",
+        "cheddar cheese",
+        "bread"
+      ],
+      "portion": "1 cup soup, 1/2 sandwich",
+      "timestamp": "2026-11-11T18:20:00.000Z",
+      "toleranceRating": 2,
+      "toleranceNotes": "Acidity from tomato caused mild reflux and mouth tingling.",
+      "isCustomFood": true,
+      "nutritionSummary": {
+        "proteinG": 12,
+        "fiberG": 2.1,
+        "energyKcal": 290,
+        "source": "Manual Entry"
+      },
+      "createdAt": "2026-11-11T19:00:00.000Z",
+      "updatedAt": "2026-11-11T19:00:00.000Z"
+    },
+    {
+      "id": "meal_4",
+      "userId": "usr_elena_vance",
+      "mealType": "dinner",
+      "foodName": "Baked Herb Salmon & Mashed Sweet Potato",
+      "ingredients": [
+        "wild salmon",
+        "sweet potato",
+        "zucchini",
+        "olive oil"
+      ],
+      "normalizedIngredients": [
+        "salmon",
+        "sweet potato",
+        "zucchini",
+        "olive oil"
+      ],
+      "portion": "1 fillet (130g) + 1/2 cup mash",
+      "timestamp": "2026-11-12T18:15:00.000Z",
+      "toleranceRating": 4,
+      "toleranceNotes": "Easy to swallow; mild metallic aftertaste subsided with lemon water.",
+      "isCustomFood": false,
+      "nutritionSummary": {
+        "proteinG": 29,
+        "fiberG": 4.8,
+        "energyKcal": 410,
+        "source": "USDA FDC"
+      },
+      "createdAt": "2026-11-12T18:30:00.000Z",
+      "updatedAt": "2026-11-12T18:30:00.000Z"
+    },
+    {
+      "id": "meal_5",
+      "userId": "usr_elena_vance",
+      "mealType": "snack",
+      "foodName": "Blueberry Banana Greek Yogurt Smoothie",
+      "ingredients": [
+        "greek yogurt",
+        "frozen blueberries",
+        "banana",
+        "almond milk"
+      ],
+      "normalizedIngredients": [
+        "yogurt",
+        "blueberries",
+        "banana",
+        "almond milk"
+      ],
+      "portion": "250 ml glass",
+      "timestamp": "2026-11-13T15:10:00.000Z",
+      "toleranceRating": 5,
+      "toleranceNotes": "Let warm 10 min out of blender; great protein boost.",
+      "isCustomFood": false,
+      "nutritionSummary": {
+        "proteinG": 18,
+        "fiberG": 4.1,
+        "energyKcal": 265,
+        "source": "USDA FDC"
+      },
+      "createdAt": "2026-11-13T15:15:00.000Z",
+      "updatedAt": "2026-11-13T15:15:00.000Z"
+    },
+    {
+      "id": "meal_6",
+      "userId": "usr_elena_vance",
+      "mealType": "breakfast",
+      "foodName": "Scrambled Eggs with Soft Avocado Toast",
+      "ingredients": [
+        "eggs",
+        "avocado",
+        "white toast"
+      ],
+      "normalizedIngredients": [
+        "eggs",
+        "avocado",
+        "bread"
+      ],
+      "portion": "2 soft-scrambled eggs, 1 slice",
+      "timestamp": "2026-11-14T09:00:00.000Z",
+      "toleranceRating": 4,
+      "toleranceNotes": "Ate slowly over 20 minutes; tolerated well.",
+      "isCustomFood": true,
+      "nutritionSummary": {
+        "proteinG": 16,
+        "fiberG": 4,
+        "energyKcal": 320,
+        "source": "USDA FDC"
+      },
+      "createdAt": "2026-11-14T09:15:00.000Z",
+      "updatedAt": "2026-11-14T09:15:00.000Z"
+    },
+    {
+      "id": "meal_7",
+      "userId": "usr_elena_vance",
+      "mealType": "breakfast",
+      "foodName": "Creamy Oat & Poached Pear Porridge",
+      "ingredients": [
+        "rolled oats",
+        "almond milk",
+        "poached pear",
+        "almond butter"
+      ],
+      "normalizedIngredients": [
+        "oats",
+        "almond milk",
+        "pear",
+        "almond butter"
+      ],
+      "portion": "1 bowl (240g)",
+      "timestamp": "2026-11-15T08:25:00.000Z",
+      "toleranceRating": 5,
+      "toleranceNotes": "Consistent go-to breakfast; zero discomfort.",
+      "isCustomFood": false,
+      "nutritionSummary": {
+        "proteinG": 9.5,
+        "fiberG": 7.2,
+        "energyKcal": 340,
+        "source": "USDA FDC"
+      },
+      "createdAt": "2026-11-15T08:35:00.000Z",
+      "updatedAt": "2026-11-15T08:35:00.000Z"
+    },
+    {
+      "id": "meal_8",
+      "userId": "usr_elena_vance",
+      "mealType": "lunch",
+      "foodName": "Warm Ginger Miso & Silken Tofu Broth",
+      "ingredients": [
+        "vegetable broth",
+        "fresh ginger",
+        "white miso paste",
+        "silken tofu",
+        "white rice"
+      ],
+      "normalizedIngredients": [
+        "vegetable broth",
+        "ginger",
+        "miso",
+        "tofu",
+        "white rice"
+      ],
+      "portion": "1.5 cups",
+      "timestamp": "2026-11-15T12:40:00.000Z",
+      "toleranceRating": 5,
+      "toleranceNotes": "Comforting and hydrating.",
+      "isCustomFood": false,
+      "nutritionSummary": {
+        "proteinG": 11,
+        "fiberG": 2.5,
+        "energyKcal": 215,
+        "source": "USDA FDC"
+      },
+      "createdAt": "2026-11-15T12:50:00.000Z",
+      "updatedAt": "2026-11-15T12:50:00.000Z"
+    }
+  ],
+  "hydration": [
+    {
+      "id": "hyd_1",
+      "userId": "usr_elena_vance",
+      "fluidType": "Warm Ginger Tea",
+      "amountMl": 250,
+      "temperature": "warm",
+      "timestamp": "2026-11-09T09:30:00.000Z",
+      "notes": "Sipped slowly",
+      "createdAt": "2026-11-09T09:30:00.000Z"
+    },
+    {
+      "id": "hyd_2",
+      "userId": "usr_elena_vance",
+      "fluidType": "Filtered Water",
+      "amountMl": 500,
+      "temperature": "room",
+      "timestamp": "2026-11-09T14:00:00.000Z",
+      "notes": "",
+      "createdAt": "2026-11-09T14:00:00.000Z"
+    },
+    {
+      "id": "hyd_3",
+      "userId": "usr_elena_vance",
+      "fluidType": "Electrolyte Solution",
+      "amountMl": 350,
+      "temperature": "room",
+      "timestamp": "2026-11-10T11:00:00.000Z",
+      "notes": "",
+      "createdAt": "2026-11-10T11:00:00.000Z"
+    },
+    {
+      "id": "hyd_4",
+      "userId": "usr_elena_vance",
+      "fluidType": "Filtered Water",
+      "amountMl": 500,
+      "temperature": "room",
+      "timestamp": "2026-11-10T16:20:00.000Z",
+      "notes": "",
+      "createdAt": "2026-11-10T16:20:00.000Z"
+    },
+    {
+      "id": "hyd_5",
+      "userId": "usr_elena_vance",
+      "fluidType": "Chamomile Tea",
+      "amountMl": 300,
+      "temperature": "warm",
+      "timestamp": "2026-11-11T10:15:00.000Z",
+      "notes": "",
+      "createdAt": "2026-11-11T10:15:00.000Z"
+    },
+    {
+      "id": "hyd_6",
+      "userId": "usr_elena_vance",
+      "fluidType": "Filtered Water",
+      "amountMl": 600,
+      "temperature": "room",
+      "timestamp": "2026-11-11T15:00:00.000Z",
+      "notes": "",
+      "createdAt": "2026-11-11T15:00:00.000Z"
+    },
+    {
+      "id": "hyd_7",
+      "userId": "usr_elena_vance",
+      "fluidType": "Vegetable Broth",
+      "amountMl": 250,
+      "temperature": "warm",
+      "timestamp": "2026-11-12T11:45:00.000Z",
+      "notes": "",
+      "createdAt": "2026-11-12T11:45:00.000Z"
+    },
+    {
+      "id": "hyd_8",
+      "userId": "usr_elena_vance",
+      "fluidType": "Filtered Water",
+      "amountMl": 750,
+      "temperature": "room",
+      "timestamp": "2026-11-12T16:30:00.000Z",
+      "notes": "",
+      "createdAt": "2026-11-12T16:30:00.000Z"
+    },
+    {
+      "id": "hyd_9",
+      "userId": "usr_elena_vance",
+      "fluidType": "Filtered Water",
+      "amountMl": 500,
+      "temperature": "room",
+      "timestamp": "2026-11-13T10:00:00.000Z",
+      "notes": "",
+      "createdAt": "2026-11-13T10:00:00.000Z"
+    },
+    {
+      "id": "hyd_10",
+      "userId": "usr_elena_vance",
+      "fluidType": "Electrolyte Solution",
+      "amountMl": 450,
+      "temperature": "room",
+      "timestamp": "2026-11-13T17:00:00.000Z",
+      "notes": "",
+      "createdAt": "2026-11-13T17:00:00.000Z"
+    },
+    {
+      "id": "hyd_11",
+      "userId": "usr_elena_vance",
+      "fluidType": "Warm Ginger Tea",
+      "amountMl": 300,
+      "temperature": "warm",
+      "timestamp": "2026-11-14T09:45:00.000Z",
+      "notes": "",
+      "createdAt": "2026-11-14T09:45:00.000Z"
+    },
+    {
+      "id": "hyd_12",
+      "userId": "usr_elena_vance",
+      "fluidType": "Filtered Water",
+      "amountMl": 850,
+      "temperature": "room",
+      "timestamp": "2026-11-14T15:30:00.000Z",
+      "notes": "",
+      "createdAt": "2026-11-14T15:30:00.000Z"
+    },
+    {
+      "id": "hyd_13",
+      "userId": "usr_elena_vance",
+      "fluidType": "Warm Ginger Tea",
+      "amountMl": 250,
+      "temperature": "warm",
+      "timestamp": "2026-11-15T08:00:00.000Z",
+      "notes": "Morning hydration",
+      "createdAt": "2026-11-15T08:00:00.000Z"
+    },
+    {
+      "id": "hyd_14",
+      "userId": "usr_elena_vance",
+      "fluidType": "Filtered Water",
+      "amountMl": 500,
+      "temperature": "room",
+      "timestamp": "2026-11-15T11:15:00.000Z",
+      "notes": "With glass bottle",
+      "createdAt": "2026-11-15T11:15:00.000Z"
+    },
+    {
+      "id": "hyd_15",
+      "userId": "usr_elena_vance",
+      "fluidType": "Electrolyte Solution",
+      "amountMl": 350,
+      "temperature": "room",
+      "timestamp": "2026-11-15T14:10:00.000Z",
+      "notes": "Afternoon sip",
+      "createdAt": "2026-11-15T14:10:00.000Z"
+    }
+  ],
+  "symptomCatalog": [
+    {
+      "id": "sym_nausea",
+      "name": "Nausea",
+      "category": "gastrointestinal",
+      "description": "Queasiness or stomach upset before or after eating",
+      "quickEntry": true
+    },
+    {
+      "id": "sym_fatigue",
+      "name": "Fatigue",
+      "category": "energy",
+      "description": "Low physical energy affecting meal prep or eating stamina",
+      "quickEntry": true
+    },
+    {
+      "id": "sym_taste",
+      "name": "Taste Changes",
+      "category": "sensory",
+      "description": "Metallic taste, dulled flavors, or heightened bitterness",
+      "quickEntry": true
+    },
+    {
+      "id": "sym_appetite_loss",
+      "name": "Appetite Loss",
+      "category": "appetite",
+      "description": "Reduced interest in food or early fullness",
+      "quickEntry": true
+    },
+    {
+      "id": "sym_swallowing",
+      "name": "Difficulty Swallowing",
+      "category": "swallowing",
+      "description": "Dry throat, soreness, or discomfort when swallowing solids",
+      "quickEntry": true
+    },
+    {
+      "id": "sym_reflux",
+      "name": "Acid Reflux / Heartburn",
+      "category": "gastrointestinal",
+      "description": "Upper chest warmth or sour sensation post-meal",
+      "quickEntry": false
+    },
+    {
+      "id": "sym_dry_mouth",
+      "name": "Dry Mouth",
+      "category": "sensory",
+      "description": "Reduced saliva making dry foods difficult to chew",
+      "quickEntry": false
+    }
+  ],
+  "symptoms": [
+    {
+      "id": "slog_1",
+      "userId": "usr_elena_vance",
+      "symptomId": "sym_nausea",
+      "symptomName": "Nausea",
+      "category": "gastrointestinal",
+      "severity": 3,
+      "appetiteScore": 2,
+      "timestamp": "2026-11-10T10:15:00.000Z",
+      "notes": "Mild morning queasiness before ginger broth",
+      "createdAt": "2026-11-10T10:15:00.000Z"
+    },
+    {
+      "id": "slog_2",
+      "userId": "usr_elena_vance",
+      "symptomId": "sym_reflux",
+      "symptomName": "Acid Reflux / Heartburn",
+      "category": "gastrointestinal",
+      "severity": 4,
+      "appetiteScore": 2,
+      "triggerFood": "tomato",
+      "timestamp": "2026-11-11T19:15:00.000Z",
+      "notes": "Occurred 40 minutes after tomato soup",
+      "createdAt": "2026-11-11T19:15:00.000Z"
+    },
+    {
+      "id": "slog_3",
+      "userId": "usr_elena_vance",
+      "symptomId": "sym_taste",
+      "symptomName": "Taste Changes",
+      "category": "sensory",
+      "severity": 2,
+      "appetiteScore": 3,
+      "timestamp": "2026-11-12T18:45:00.000Z",
+      "notes": "Slight metallic taste on initial bites",
+      "createdAt": "2026-11-12T18:45:00.000Z"
+    },
+    {
+      "id": "slog_4",
+      "userId": "usr_elena_vance",
+      "symptomId": "sym_fatigue",
+      "symptomName": "Fatigue",
+      "category": "energy",
+      "severity": 3,
+      "appetiteScore": 3,
+      "timestamp": "2026-11-13T13:30:00.000Z",
+      "notes": "Needed shorter prep meal for afternoon snack",
+      "createdAt": "2026-11-13T13:30:00.000Z"
+    },
+    {
+      "id": "slog_5",
+      "userId": "usr_elena_vance",
+      "symptomId": "sym_appetite_loss",
+      "symptomName": "Appetite Loss",
+      "category": "appetite",
+      "severity": 2,
+      "appetiteScore": 4,
+      "timestamp": "2026-11-14T12:15:00.000Z",
+      "notes": "Appetite improved steadily by midday",
+      "createdAt": "2026-11-14T12:15:00.000Z"
+    },
+    {
+      "id": "slog_6",
+      "userId": "usr_elena_vance",
+      "symptomId": "sym_fatigue",
+      "symptomName": "Fatigue",
+      "category": "energy",
+      "severity": 2,
+      "appetiteScore": 4,
+      "timestamp": "2026-11-15T13:30:00.000Z",
+      "notes": "Mild afternoon tiredness, hydrated well",
+      "createdAt": "2026-11-15T13:30:00.000Z"
+    }
+  ],
+  "sensitivities": [
+    {
+      "id": "sens_1",
+      "userId": "usr_elena_vance",
+      "foodName": "Acidic Tomato Sauces",
+      "normalizedIngredient": "tomato",
+      "reactionType": "Heartburn & oral sensitivity",
+      "severity": 4,
+      "notes": "Better tolerated when substituted with sweet potato or broth bases.",
+      "lastReportedAt": "2026-11-11T19:15:00.000Z",
+      "createdAt": "2026-11-11T19:20:00.000Z"
+    },
+    {
+      "id": "sens_2",
+      "userId": "usr_elena_vance",
+      "foodName": "Very Cold Beverages",
+      "normalizedIngredient": "ice water",
+      "reactionType": "Throat discomfort",
+      "severity": 3,
+      "notes": "Prefer room-temperature or warm herbal infusions.",
+      "lastReportedAt": "2026-11-08T14:00:00.000Z",
+      "createdAt": "2026-11-08T14:00:00.000Z"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "rec_ginger_miso_broth",
+      "title": "Warm Ginger Miso & Silken Tofu Broth",
+      "category": "Soup & Broth",
+      "prepTimeMinutes": 15,
+      "servings": 2,
+      "imageUrl": "/src/assets/images/recipe_ginger_broth_1794746822717.jpg",
+      "ingredients": [
+        {
+          "raw": "3 cups low-sodium vegetable broth",
+          "quantity": "3",
+          "unit": "cups",
+          "normalized": "low sodium vegetable broth"
+        },
+        {
+          "raw": "1 tbsp fresh grated ginger",
+          "quantity": "1",
+          "unit": "tbsp",
+          "normalized": "ginger"
+        },
+        {
+          "raw": "2 tbsp white miso paste",
+          "quantity": "2",
+          "unit": "tbsp",
+          "normalized": "miso"
+        },
+        {
+          "raw": "150 g silken tofu, cubed",
+          "quantity": "150",
+          "unit": "g",
+          "normalized": "tofu"
+        },
+        {
+          "raw": "1 medium carrot, thinly sliced",
+          "quantity": "1",
+          "unit": "medium",
+          "normalized": "carrot thinly sliced"
+        },
+        {
+          "raw": "1 cup steamed white rice",
+          "quantity": "1",
+          "unit": "cup",
+          "normalized": "white rice"
+        }
+      ],
+      "instructions": [
+        "Simmer low-sodium vegetable broth with sliced carrots and grated ginger for 8 minutes until carrots are very soft.",
+        "Remove from direct boil, whisk white miso paste in a small ladle of warm broth, and stir back into the pot.",
+        "Gently fold in silken tofu cubes and warm for 2 minutes without boiling. Serve over soft steamed white rice."
+      ],
+      "dietaryTags": [
+        "Soft Texture",
+        "Bland / Low-Nausea",
+        "Dairy-Free",
+        "Warm & Soothing"
+      ],
+      "safetyWarnings": [
+        "Use pasteurized miso paste and ensure tofu is heated thoroughly to at least 165°F (74°C) if following neutropenic guidelines."
+      ],
+      "allergens": [
+        "Soy"
+      ],
+      "sourceName": "National Cancer Institute — Eating Hints Recipe Adaptation",
+      "sourceUrl": "https://www.cancer.gov/publications/patient-education/eatinghints",
+      "sourceVerified": true,
+      "nutritionPerServing": {
+        "proteinG": 11,
+        "fiberG": 2.5,
+        "potassiumMg": 340,
+        "sodiumMg": 480,
+        "ironMg": 1.8,
+        "vitaminCMg": 4,
+        "energyKcal": 215,
+        "source": "USDA FoodData Central composite calculation"
+      },
+      "isCustom": false,
+      "createdAt": "2026-10-26T09:00:00.000Z"
+    },
+    {
+      "id": "rec_poached_pear_oat_porridge",
+      "title": "Creamy Oat & Poached Pear Almond Porridge",
+      "category": "Breakfast",
+      "prepTimeMinutes": 12,
+      "servings": 1,
+      "imageUrl": "/src/assets/images/recipe_oat_porridge_1794746823540.jpg",
+      "ingredients": [
+        {
+          "raw": "1/2 cup rolled oats",
+          "quantity": "1/2",
+          "unit": "cup",
+          "normalized": "oats"
+        },
+        {
+          "raw": "1 cup unsweetened almond milk",
+          "quantity": "1",
+          "unit": "cup",
+          "normalized": "almond milk"
+        },
+        {
+          "raw": "1 medium poached pear, peeled and sliced",
+          "quantity": "1",
+          "unit": "medium",
+          "normalized": "pear"
+        },
+        {
+          "raw": "1 tbsp smooth almond butter",
+          "quantity": "1",
+          "unit": "tbsp",
+          "normalized": "almond butter"
+        },
+        {
+          "raw": "1/4 tsp ground cinnamon",
+          "quantity": "1/4",
+          "unit": "tsp",
+          "normalized": "ground cinnamon"
+        }
+      ],
+      "instructions": [
+        "Combine rolled oats and unsweetened almond milk in a small saucepan over gentle medium-low heat.",
+        "Simmer for 6–8 minutes, stirring occasionally, until creamy and very soft.",
+        "Top with peeled poached pear slices, smooth almond butter swirl, and a pinch of cinnamon."
+      ],
+      "dietaryTags": [
+        "Soft Texture",
+        "Dairy-Free",
+        "Low-Acid",
+        "Gentle Fiber"
+      ],
+      "safetyWarnings": [
+        "Peel pears thoroughly and ensure poached fruit is cooked until fork-tender for swallowing comfort."
+      ],
+      "allergens": [
+        "Tree Nuts / Peanuts"
+      ],
+      "sourceName": "Oncology Nutrition DPG — Gentle Breakfast Guide",
+      "sourceUrl": "https://www.oncologynutrition.org/erfc/eating-well-during-treatment",
+      "sourceVerified": true,
+      "nutritionPerServing": {
+        "proteinG": 9.5,
+        "fiberG": 7.2,
+        "potassiumMg": 390,
+        "sodiumMg": 165,
+        "ironMg": 2.4,
+        "vitaminCMg": 5,
+        "energyKcal": 340,
+        "source": "USDA FoodData Central composite calculation"
+      },
+      "isCustom": false,
+      "createdAt": "2026-10-28T08:30:00.000Z"
+    },
+    {
+      "id": "rec_herb_salmon_sweet_potato",
+      "title": "Tender Baked Herb Salmon & Mashed Sweet Potato",
+      "category": "Main Dish",
+      "prepTimeMinutes": 25,
+      "servings": 2,
+      "imageUrl": "/src/assets/images/recipe_salmon_quinoa_1794746829385.jpg",
+      "ingredients": [
+        {
+          "raw": "2 fillets wild salmon (140g each)",
+          "quantity": "2",
+          "unit": "unit",
+          "normalized": "salmon"
+        },
+        {
+          "raw": "1 large sweet potato, peeled and cubed",
+          "quantity": "1",
+          "unit": "large",
+          "normalized": "sweet potato and cubed"
+        },
+        {
+          "raw": "1 medium zucchini, ribboned and steamed",
+          "quantity": "1",
+          "unit": "medium",
+          "normalized": "zucchini ribboned and"
+        },
+        {
+          "raw": "1 tbsp extra virgin olive oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "normalized": "olive oil"
+        },
+        {
+          "raw": "1 tsp chopped fresh dill",
+          "quantity": "1",
+          "unit": "tsp",
+          "normalized": "dill"
+        }
+      ],
+      "instructions": [
+        "Bake seasoned wild salmon at 375°F (190°C) for 14–16 minutes until internal temperature reaches 145°F (63°C) and flesh flakes effortlessly.",
+        "Boil peeled sweet potato cubes until tender and mash with olive oil and a splash of warm water or broth.",
+        "Steam zucchini ribbons until completely soft and plate beside the salmon and sweet potato."
+      ],
+      "dietaryTags": [
+        "High Protein",
+        "Soft Texture",
+        "Dairy-Free",
+        "Gluten-Free"
+      ],
+      "safetyWarnings": [
+        "Cook salmon thoroughly to an internal temperature of 145°F (63°C); avoid raw or cold-smoked fish during active treatment."
+      ],
+      "allergens": [
+        "Fish"
+      ],
+      "sourceName": "American Cancer Society — Protein Recovery Kitchen",
+      "sourceUrl": "https://www.cancer.org/cancer/survivorship/coping/nutrition.html",
+      "sourceVerified": true,
+      "nutritionPerServing": {
+        "proteinG": 29,
+        "fiberG": 4.8,
+        "potassiumMg": 860,
+        "sodiumMg": 110,
+        "ironMg": 1.6,
+        "vitaminCMg": 24,
+        "energyKcal": 410,
+        "source": "USDA FoodData Central composite calculation"
+      },
+      "isCustom": false,
+      "createdAt": "2026-10-30T12:00:00.000Z"
+    },
+    {
+      "id": "rec_blueberry_yogurt_smoothie",
+      "title": "Silky Blueberry Banana Greek Yogurt Smoothie",
+      "category": "Smoothie & Snack",
+      "prepTimeMinutes": 5,
+      "servings": 1,
+      "imageUrl": "/src/assets/images/recipe_berry_smoothie_1794746822742.jpg",
+      "ingredients": [
+        {
+          "raw": "3/4 cup plain Greek yogurt",
+          "quantity": "3/4",
+          "unit": "cup",
+          "normalized": "yogurt"
+        },
+        {
+          "raw": "1/2 cup frozen blueberries",
+          "quantity": "1/2",
+          "unit": "cup",
+          "normalized": "blueberries"
+        },
+        {
+          "raw": "1/2 ripe banana",
+          "quantity": "1/2",
+          "unit": "unit",
+          "normalized": "banana"
+        },
+        {
+          "raw": "1/2 cup unsweetened almond milk",
+          "quantity": "1/2",
+          "unit": "cup",
+          "normalized": "almond milk"
+        }
+      ],
+      "instructions": [
+        "Wash any fresh fruit under running water; combine pasteurized Greek yogurt, frozen blueberries, ripe banana, and almond milk in a clean blender.",
+        "Blend on high for 45 seconds until completely velvety with no berry skin fragments if mouth soreness is present.",
+        "Serve chilled or let rest 5 minutes to temper coldness if experiencing cold sensitivity."
+      ],
+      "dietaryTags": [
+        "High Protein",
+        "Soft Texture",
+        "No-Cook Quick",
+        "Cool & Soothing"
+      ],
+      "safetyWarnings": [
+        "If experiencing oxaliplatin-related cold sensitivity, allow smoothie to warm slightly toward room temperature before sipping.",
+        "Use commercially pasteurized yogurt only."
+      ],
+      "allergens": [
+        "Dairy",
+        "Tree Nuts / Peanuts"
+      ],
+      "sourceName": "Cook for Your Life — Fred Hutch Cancer Center",
+      "sourceUrl": "https://www.cookforyourlife.org/",
+      "sourceVerified": true,
+      "nutritionPerServing": {
+        "proteinG": 18,
+        "fiberG": 4.1,
+        "potassiumMg": 490,
+        "sodiumMg": 130,
+        "ironMg": 0.7,
+        "vitaminCMg": 14,
+        "energyKcal": 265,
+        "source": "USDA FoodData Central composite calculation"
+      },
+      "isCustom": false,
+      "createdAt": "2026-10-31T10:00:00.000Z"
+    }
+  ],
+  "collections": [
+    {
+      "id": "col_gentle_mornings",
+      "userId": "usr_elena_vance",
+      "name": "Gentle Mornings",
+      "description": "Warm, soothing breakfasts and low-odor infusions for treatment weeks.",
+      "recipeIds": [
+        "rec_poached_pear_oat_porridge",
+        "rec_blueberry_yogurt_smoothie"
+      ],
+      "createdAt": "2026-11-03T09:00:00.000Z"
+    },
+    {
+      "id": "col_high_protein",
+      "userId": "usr_elena_vance",
+      "name": "Soft High-Protein Recovery",
+      "description": "Easy-to-swallow protein-forward dishes.",
+      "recipeIds": [
+        "rec_herb_salmon_sweet_potato",
+        "rec_ginger_miso_broth"
+      ],
+      "createdAt": "2026-11-05T11:00:00.000Z"
+    }
+  ],
+  "savedRecipes": [
+    {
+      "id": "sav_1",
+      "userId": "usr_elena_vance",
+      "recipeId": "rec_ginger_miso_broth",
+      "savedAt": "2026-11-10T13:00:00.000Z"
+    },
+    {
+      "id": "sav_2",
+      "userId": "usr_elena_vance",
+      "recipeId": "rec_poached_pear_oat_porridge",
+      "savedAt": "2026-11-12T09:00:00.000Z"
+    }
+  ],
+  "usdaFoods": [
+    {
+      "fdcId": 171287,
+      "description": "Yogurt, Greek, plain, nonfat (USDA Foundation)",
+      "category": "Dairy and Egg Products",
+      "servingSizeLabel": "100g (approx. 3.5 oz)",
+      "nutrientsPer100g": {
+        "proteinG": 10.2,
+        "fiberG": 0,
+        "potassiumMg": 141,
+        "sodiumMg": 36,
+        "ironMg": 0.07,
+        "vitaminCMg": 0,
+        "calciumMg": 110,
+        "energyKcal": 59
+      }
+    },
+    {
+      "fdcId": 175167,
+      "description": "Fish, salmon, Atlantic, wild, cooked, dry heat",
+      "category": "Finfish and Shellfish Products",
+      "servingSizeLabel": "100g (approx. 3.5 oz)",
+      "nutrientsPer100g": {
+        "proteinG": 25.4,
+        "fiberG": 0,
+        "potassiumMg": 628,
+        "sodiumMg": 56,
+        "ironMg": 1.03,
+        "vitaminCMg": 0,
+        "calciumMg": 15,
+        "energyKcal": 182
+      }
+    },
+    {
+      "fdcId": 173904,
+      "description": "Oats, rolled, regular and quick, dry",
+      "category": "Cereal Grains and Pasta",
+      "servingSizeLabel": "100g dry",
+      "nutrientsPer100g": {
+        "proteinG": 13.2,
+        "fiberG": 10.1,
+        "potassiumMg": 362,
+        "sodiumMg": 6,
+        "ironMg": 4.25,
+        "vitaminCMg": 0,
+        "calciumMg": 52,
+        "energyKcal": 379
+      }
+    },
+    {
+      "fdcId": 168482,
+      "description": "Sweet potato, cooked, boiled, without skin",
+      "category": "Vegetables and Vegetable Products",
+      "servingSizeLabel": "100g",
+      "nutrientsPer100g": {
+        "proteinG": 1.4,
+        "fiberG": 2.5,
+        "potassiumMg": 230,
+        "sodiumMg": 27,
+        "ironMg": 0.72,
+        "vitaminCMg": 12.8,
+        "calciumMg": 27,
+        "energyKcal": 76
+      }
+    },
+    {
+      "fdcId": 174277,
+      "description": "Tofu, silken, soft, prepared with calcium sulfate",
+      "category": "Legumes and Legume Products",
+      "servingSizeLabel": "100g",
+      "nutrientsPer100g": {
+        "proteinG": 4.8,
+        "fiberG": 0.1,
+        "potassiumMg": 150,
+        "sodiumMg": 12,
+        "ironMg": 0.85,
+        "vitaminCMg": 0.1,
+        "calciumMg": 130,
+        "energyKcal": 55
+      }
+    },
+    {
+      "fdcId": 169231,
+      "description": "Ginger root, raw (culinary aromatic)",
+      "category": "Spices and Herbs",
+      "servingSizeLabel": "100g",
+      "nutrientsPer100g": {
+        "proteinG": 1.8,
+        "fiberG": 2,
+        "potassiumMg": 415,
+        "sodiumMg": 13,
+        "ironMg": 0.6,
+        "vitaminCMg": 5,
+        "calciumMg": 16,
+        "energyKcal": 80
+      }
+    },
+    {
+      "fdcId": 173944,
+      "description": "Bananas, raw",
+      "category": "Fruits and Fruit Juices",
+      "servingSizeLabel": "100g",
+      "nutrientsPer100g": {
+        "proteinG": 1.1,
+        "fiberG": 2.6,
+        "potassiumMg": 358,
+        "sodiumMg": 1,
+        "ironMg": 0.26,
+        "vitaminCMg": 8.7,
+        "calciumMg": 5,
+        "energyKcal": 89
+      }
+    },
+    {
+      "fdcId": 171711,
+      "description": "Blueberries, frozen or raw",
+      "category": "Fruits and Fruit Juices",
+      "servingSizeLabel": "100g",
+      "nutrientsPer100g": {
+        "proteinG": 0.7,
+        "fiberG": 2.4,
+        "potassiumMg": 77,
+        "sodiumMg": 1,
+        "ironMg": 0.28,
+        "vitaminCMg": 9.7,
+        "calciumMg": 6,
+        "energyKcal": 57
+      }
+    },
+    {
+      "fdcId": 172421,
+      "description": "Rice, white, long-grain, regular, cooked",
+      "category": "Cereal Grains and Pasta",
+      "servingSizeLabel": "100g cooked",
+      "nutrientsPer100g": {
+        "proteinG": 2.7,
+        "fiberG": 0.4,
+        "potassiumMg": 35,
+        "sodiumMg": 1,
+        "ironMg": 1.2,
+        "vitaminCMg": 0,
+        "calciumMg": 10,
+        "energyKcal": 130
+      }
+    }
+  ],
+  "foodSafetyGuides": [
+    {
+      "id": "fs_neutropenic",
+      "topic": "Food Handling During Low White Blood Cell Counts (Neutropenia)",
+      "audience": "Patients undergoing chemotherapy or stem cell transplant",
+      "summary": "Safe food preparation lowers exposure to foodborne pathogens when immune defenses are temporarily reduced.",
+      "actionableSteps": [
+        "Wash hands with warm soapy water for 20 seconds before preparing or eating meals.",
+        "Cook poultry to 165°F (74°C), fish to 145°F (63°C), and reheat leftovers until steaming hot.",
+        "Refrigerate perishable dishes within 2 hours of cooking (1 hour if ambient room temperature exceeds 90°F).",
+        "Scrub thick-skinned fruits and vegetables under running water before peeling."
+      ],
+      "avoidList": [
+        "Unpasteurized milk, soft cheeses (brie, queso fresco, blue cheese), and unpasteurized juices",
+        "Raw or undercooked eggs, sushi, sashimi, ceviche, and raw sprouts (alfalfa, mung bean)",
+        "Self-serve bulk bins, salad bars, and deli meats unless heated steaming hot"
+      ],
+      "sourceOrganization": "FDA & USDA — Food Safety for People with Cancer",
+      "sourceUrl": "https://www.fda.gov/food/people-risk-foodborne-illness/food-safety-people-cancer"
+    },
+    {
+      "id": "fs_mucositis",
+      "topic": "Texture & Acidity Considerations for Mouth Sores & Swallowing",
+      "audience": "Patients experiencing oral mucositis, dry mouth, or dysphagia",
+      "summary": "Adjusting food temperature, moisture, and acidity makes eating more comfortable and reduces mucosal irritation.",
+      "actionableSteps": [
+        "Serve foods lukewarm or at room temperature rather than piping hot.",
+        "Moisten meats, grains, and vegetables with mild broths, olive oil, or plain yogurt.",
+        "Blend soups and smoothies until smooth; peel fruits before poaching or pureeing."
+      ],
+      "avoidList": [
+        "Sharp, crunchy foods (crackers, toast crusts, tortilla chips)",
+        "Highly acidic tomatoes, citrus juices, vinegar dressings, and spicy peppers",
+        "Alcohol-based mouthwashes or carbonated beverages during acute soreness"
+      ],
+      "sourceOrganization": "National Cancer Institute (NCI) — Eating Hints",
+      "sourceUrl": "https://www.cancer.gov/publications/patient-education/eatinghints"
+    },
+    {
+      "id": "fs_taste_nausea",
+      "topic": "Managing Metallic Taste & Treatment-Related Nausea",
+      "audience": "Patients noticing dysgeusia or episodic nausea",
+      "summary": "Small, frequent, low-odor meals paired with non-reactive utensils help preserve intake on low-appetite days.",
+      "actionableSteps": [
+        "Use bamboo, ceramic, or plastic utensils if metal cutlery worsens metallic taste.",
+        "Favor cold or room-temperature dishes that release fewer strong cooking aromas.",
+        "Sip ginger tea, peppermint infusion, or diluted electrolyte fluids in small steady amounts between meals."
+      ],
+      "avoidList": [
+        "Heavy fried, greasy, or strongly perfumed foods immediately before infusions",
+        "Eating large volumes at once when early satiety is present"
+      ],
+      "sourceOrganization": "American Cancer Society — Nutrition for People with Cancer",
+      "sourceUrl": "https://www.cancer.org/cancer/survivorship/coping/nutrition.html"
+    }
+  ],
+  "healthcareResources": [
+    {
+      "id": "hr_onc_dpg",
+      "title": "Find a Board-Certified Specialist in Oncology Nutrition (CSO)",
+      "organization": "Oncology Nutrition Dietetic Practice Group (Academy of Nutrition and Dietetics)",
+      "description": "Directory and evidence-based articles authored by Registered Dietitian Nutritionists specializing in cancer care.",
+      "url": "https://www.oncologynutrition.org/",
+      "category": "Registered Dietitian"
+    },
+    {
+      "id": "hr_nci_hints",
+      "title": "Eating Hints: Before, During, and After Cancer Treatment",
+      "organization": "National Cancer Institute (NIH)",
+      "description": "Comprehensive patient guide covering appetite changes, hydration strategies, weight maintenance, and caregiver meal tips.",
+      "url": "https://www.cancer.gov/publications/patient-education/eatinghints",
+      "category": "Clinical Guidelines"
+    },
+    {
+      "id": "hr_acs_nutrition",
+      "title": "Nutrition for the Person With Cancer During Treatment",
+      "organization": "American Cancer Society",
+      "description": "Practical guidance on protein needs, managing side effects, and questions to bring to your oncology care team.",
+      "url": "https://www.cancer.org/cancer/survivorship/coping/nutrition.html",
+      "category": "Symptom Management"
+    }
+  ],
+  "reports": [
+    {
+      "id": "rep_df1224a8",
+      "userId": "usr_elena_vance",
+      "title": "Integration Test Summary",
+      "dateRangeStart": "2026-11-02T00:00:00.000Z",
+      "dateRangeEnd": "2026-11-15T23:59:59.999Z",
+      "includedCategories": [
+        "meals",
+        "hydration",
+        "symptoms",
+        "appetite",
+        "tolerances",
+        "sensitivities"
+      ],
+      "generatedAt": "2026-11-15T12:53:25.157Z",
+      "validationChecksum": "25b5257091f9266e",
+      "recordCounts": {
+        "meals": 8,
+        "hydration": 15,
+        "symptoms": 6,
+        "sensitivities": 2
+      },
+      "summary": {
+        "totalMeals": 8,
+        "avgDailyFluidMl": 479,
+        "fluidGoalMl": 1800,
+        "avgAppetiteScore": 3,
+        "avgToleranceRating": 4.38,
+        "topSymptoms": [
+          {
+            "name": "Fatigue",
+            "count": 2,
+            "avgSeverity": 2.5
+          },
+          {
+            "name": "Nausea",
+            "count": 1,
+            "avgSeverity": 3
+          },
+          {
+            "name": "Acid Reflux / Heartburn",
+            "count": 1,
+            "avgSeverity": 4
+          },
+          {
+            "name": "Taste Changes",
+            "count": 1,
+            "avgSeverity": 2
+          },
+          {
+            "name": "Appetite Loss",
+            "count": 1,
+            "avgSeverity": 2
+          }
+        ],
+        "wellToleratedFoods": [
+          {
+            "ingredient": "almond milk",
+            "avgRating": 5,
+            "count": 3
+          },
+          {
+            "ingredient": "oats",
+            "avgRating": 5,
+            "count": 2
+          },
+          {
+            "ingredient": "pear",
+            "avgRating": 5,
+            "count": 2
+          },
+          {
+            "ingredient": "almond butter",
+            "avgRating": 5,
+            "count": 2
+          },
+          {
+            "ingredient": "vegetable broth",
+            "avgRating": 5,
+            "count": 2
+          }
+        ],
+        "cautionFoods": [
+          {
+            "ingredient": "tomato",
+            "avgRating": 2,
+            "count": 1
+          },
+          {
+            "ingredient": "cheddar cheese",
+            "avgRating": 2,
+            "count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "caregiverGrants": [
+    {
+      "id": "cg_1",
+      "patientUserId": "usr_elena_vance",
+      "caregiverName": "David Vance",
+      "caregiverEmail": "david.vance@familycare.org",
+      "relationship": "Spouse / Primary Caregiver",
+      "permissions": [
+        "read_journal",
+        "log_entries",
+        "export_reports"
+      ],
+      "active": true,
+      "grantedAt": "2026-11-01T10:00:00.000Z"
+    }
+  ]
+}

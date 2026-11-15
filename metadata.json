@@ -1,0 +1,6 @@
+{
+  "name": "OncoByte",
+  "description": "Oncology nutrition journal, hydration and symptom tracker, tolerance-aware recipe library, food safety reference, and clinician PDF reporting platform with independent REST API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
